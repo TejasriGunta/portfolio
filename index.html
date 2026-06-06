@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tejasri Gunta · AI/ML</title>
 
-  <!-- Google Fonts: Inter (display) + Inter (body) — clean sans-serif -->
+  <!-- Google Fonts: Titillium Web (headings) + Inter (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=League+Spartan:wght@400;600;700;900&display=swap" rel="stylesheet" />
 
   <style>
     /* ============================================================
@@ -27,7 +27,8 @@
       --text-muted:   #8A8880;
       --text-faint:   #44433F;
       --radius:       14px;
-      --font:         'Inter', sans-serif;
+      --font:         'League Spartan', sans-serif;
+      --font-spacing: 0.04em;
       --transition:   0.35s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -40,6 +41,7 @@
       background: var(--obsidian);
       color: var(--text);
       font-family: var(--font);
+      letter-spacing: 0.04em;
       font-weight: 400;
       line-height: 1.65;
       overflow-x: hidden;
@@ -114,6 +116,7 @@
     }
     h2.section-title {
       font-family: var(--font);
+      letter-spacing: 0.04em;
       font-size: clamp(2rem, 4vw, 3rem);
       font-weight: 800;
       line-height: 1.1;
@@ -150,6 +153,7 @@
     nav .container { display: flex; align-items: center; justify-content: space-between; }
     .nav-logo {
       font-family: var(--font);
+      letter-spacing: 0.04em;
       font-weight: 800;
       font-size: 1.1rem;
       letter-spacing: -.02em;
@@ -198,6 +202,7 @@
     .mobile-menu.open { display: flex; }
     .mobile-menu a {
       font-family: var(--font);
+      letter-spacing: 0.04em;
       font-size: 2.5rem; font-weight: 800;
       color: var(--text); transition: color var(--transition);
     }
@@ -282,6 +287,7 @@
 
     h1.hero-name {
       font-family: var(--font);
+      letter-spacing: 0.04em;
       font-size: clamp(3rem, 7vw, 5.5rem);
       font-weight: 900;
       letter-spacing: -.04em;
@@ -328,6 +334,7 @@
     .hero-stats { display: flex; gap: 40px; align-items: flex-start; }
     .hero-stat-num {
       font-family: var(--font);
+      letter-spacing: 0.04em;
       font-size: 1.8rem; font-weight: 800;
       color: var(--amber); line-height: 1;
     }
@@ -638,6 +645,7 @@
     .contact-inner { max-width: 680px; margin: 0 auto; text-align: center; }
     .contact-title {
       font-family: var(--font);
+      letter-spacing: 0.04em;
       font-size: clamp(2.2rem, 5vw, 3.8rem);
       font-weight: 800; letter-spacing: -.035em; line-height: 1.1; margin-bottom: 20px;
     }
@@ -921,10 +929,13 @@
             <div class="edu-card-sub">12th Grade, Science</div>
             <div class="edu-card-meta">
               <span class="edu-meta-item">93.2%</span>
+              <span class="edu-meta-item" style="color:var(--text-muted)">2021 – 2023</span>
             </div>
           </div>
 
-          <div class="edu-card" style="margin-top:20px">
+          <div style="margin-top:24px;margin-bottom:12px;font-size:12px;color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase;font-weight:600;">Roles of Responsibility</div>
+
+          <div class="edu-card">
             <div class="edu-card-title">INCIDENT Fest Head</div>
             <div class="edu-card-sub">Artist's Forum Club, NITK</div>
             <p style="font-size:13px;color:var(--text-muted);margin-top:10px;line-height:1.6">
@@ -943,15 +954,6 @@
       <h2 class="section-title reveal" style="transition-delay:.1s">Where I've<br>shipped work.</h2>
 
       <div class="exp-card reveal" style="transition-delay:.2s">
-        <div class="exp-icon">
-          <!-- Briefcase icon -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
-            <line x1="12" y1="12" x2="12" y2="12"/>
-            <path d="M2 13h20"/>
-          </svg>
-        </div>
         <div>
           <div class="exp-role">AI & Data Analytics Intern</div>
           <div class="exp-company">Algofusion Technologies Pvt. Ltd., Bangalore</div>
@@ -1117,10 +1119,6 @@
     <div class="container">
       <div class="contact-inner">
         <div class="section-label reveal" style="justify-content:center">04 · Contact</div>
-        <div class="hero-eyebrow reveal" style="justify-content:center;transition-delay:.05s">
-          <div class="status-dot"></div>
-          <span class="status-text">Open to internships &amp; new grad roles</span>
-        </div>
         <h2 class="contact-title reveal" style="transition-delay:.1s">
           Let's build something<br><span style="color:var(--amber)">together.</span>
         </h2>
